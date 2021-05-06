@@ -2,6 +2,11 @@ import numpy as np
 
 class SegmentMetrics(object):
     def __init__(self, truth, pred):
+        """
+        truh : np_array (W , H) values in classify form 0,1,...
+        pred : np_array (W , H) values in classify form 0,1,...
+
+        """
         self.truth = truth
         self.pred = pred
         self.smooth = 0.001
